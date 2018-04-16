@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+  font-size: 10px; 
+  color: #3c3c3c;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+section  {
+  .container {
+    margin: 120px auto;
+    text-align: center;
+  }
+  
+  
+  .border {
+    border: 2px solid #3c3c3c;
+    border-top-width: 0;
+    text-align: center;
+  
+  h2 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      margin: 0;
+      letter-spacing: 8.95px;
+      font-weight: 700;
+    }
+
+    p {
+      display: inline-block;
+      font-size: 1.6rem;
+      line-height: 24px;
+      font-weight: 300;
+      margin: 0 60px 40px ;
+    }
+
+    h2 {
+      display: table;
+      width: 100%;
+      margin-bottom: -30px;
+    }
+  
+    h2:before, h2 > span, h2:after {
+      display: table-cell;
+      white-space: nowrap;
+    }
+    h2 > span {
+      padding: 0 60px 20px;
+      position: relative;
+      top: -30px;
+    }
+    h2:before, h2:after {
+      content: "";
+      border-top: 2px solid #3c3c3c;
+      width: 50%;
+    }
+  }
+}
+
+// JUMBOTRON 
+
+.hero {
+  background: url(../assets/layer-8.png) center/cover;
+  height: 100vh;
+  text-align: center;
+  
+  .main-logo {
+    margin-top: 150px;
+  }
+  
+  .header-text {
+    color: #ffffff;
+    h1 {
+      font-size: 5.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 8.21px;
+    }
+    p {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      line-height: 29px;
+      letter-spacing: 0.9px;
+      font-weight: 400;
+    }
+  }
+  
+  .button-header {
+    margin-top: 145px;
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+//SERVICES 
+
+.services {
+  background: url(../assets/layer-4.png) center/cover;
+  
+  .border {
+    border-color: #ffffff;
+    margin: 120px auto;
+    
+    h2:before, h2:after {
+      content: "";
+      border-top: 2px solid #ffffff;
+      width: 50%;
+    }
+    
+    h2 {
+      color: #ffffff;
+    }
+    
+    p {
+    color: #ffffff;
+    }
+  }
+}
+
+//WORK
+
+.work {
+  
+  .column {
+    margin-top: 20px;
+    h3 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 5.26px;
+      padding-top: 20px;
+    }
+    
+    p {
+      font-size: 1.4rem;
+      font-weight: 300;
+      line-height: 25.89px;
+      padding-top: 20px;
+    }
+  }
+}
+
+
+.portfolio {
+  
+  .image {
+    position: relative;
+    width: 100%;
+    height: 237px;
+  }
+  
+  .background-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    
+    p {
+      padding: 0;
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 8.95px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+  
+  .photo-1 {
+    background: url(../assets/photo-1.png) center/cover no-repeat;
+  }
+  
+  .photo-2 {
+    background: url(../assets/photo-2.png) center/cover no-repeat;
+  }
+  
+  .photo-3 {
+    background: url(../assets/photo-3.png) center/cover no-repeat;
+  }
+  
+  .photo-4 {
+    background: url(../assets/photo-4.png) center/cover no-repeat;
+  }
+  
+  .photo-5 {
+    background: url(../assets/photo-5.png) center/cover no-repeat;
+  }
+  
+  .photo-6 {
+    background: url(../assets/photo-6.png) center/cover no-repeat;
+  }
+  
+  .padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .image-padding {
+    padding-bottom: 15px;
+  }
+}
+
+//CONTACT
+
+.contact {
+  
+  .button-contact {
+    display: inline-block;
+    width: 400px;
+    height: 62px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #3c3c3c;
+    line-height: 62px;
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 2.54px;
+    text-transform: uppercase;
+  }
+}
+
+.copyright {
+  position: relative;
+  text-align: center;
+  margin-top: -90px;
+  
+  img {
+    padding-top: 2px;
+  }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  
+  .portfolio {
+    
+    .padding {
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  
+  .border {
+    
+    border: 0;  
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .hero {
+    
+    .header-text {
+      
+      h1 {
+        font-size: 4rem;
+      }
+    }
+    
+    .button-header {
+      margin-top: 40px
+    }
+  }
+  
+  .contact {
+  
+    .button-contact {
+      width: 200px;
+    }
+    
+  }
+  
+  .portfolio {
+    
+    .padding {
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
